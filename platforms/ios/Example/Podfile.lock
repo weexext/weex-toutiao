@@ -1,0 +1,40 @@
+PODS:
+  - CYLTabBarController (1.13.1)
+  - Masonry (1.0.2)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SocketRocket (0.5.1)
+  - UCarWeex (0.1.0):
+    - WeexSDK
+  - UIColor-HexString (1.3.0)
+  - WeexSDK (0.15.1):
+    - SocketRocket
+  - WXDevtool (0.15.3):
+    - WeexSDK
+
+DEPENDENCIES:
+  - CYLTabBarController (~> 1.13.1)
+  - Masonry
+  - SDWebImage (~> 4.1.0)
+  - UCarWeex (from `../../../`)
+  - UIColor-HexString
+  - WXDevtool (~> 0.15.3)
+
+EXTERNAL SOURCES:
+  UCarWeex:
+    :path: ../../../
+
+SPEC CHECKSUMS:
+  CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  UCarWeex: 23b8b4b35588dcc6651be6551e05ccb88b9b75c5
+  UIColor-HexString: fadc2e1389db19147ac99dee92222d3bd8bfec4a
+  WeexSDK: 5282685df6d7279213a51a3142b915759f6e3413
+  WXDevtool: 6c837383e778a9442ee500db4069a95be321dac6
+
+PODFILE CHECKSUM: 1d8474a24a2c126bb18c08ee97e2bc8fd3a10728
+
+COCOAPODS: 1.2.1

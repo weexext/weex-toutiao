@@ -1,0 +1,27 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target 'UCarWeex_Example' do
+    
+  pod 'CYLTabBarController' ,'~> 1.13.1'
+  pod 'SDWebImage' ,'~> 4.1.0'
+  pod 'Masonry'
+  # color category
+  pod 'UIColor-HexString'
+  
+  pod 'UCarWeex',  :path => '../../../'
+  pod 'WXDevtool', '~>0.15.3', :configurations => ['Debug']
+  
+#  pod 'WeexGcanvas'
+  
+
+  target 'UCarWeex_Tests' do
+    inherit! :search_paths
+
+  end
+end

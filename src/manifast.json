@@ -1,0 +1,8 @@
+{
+  "appName":"ucar-weex",
+  "versionCode":1,
+  "versionName":"1.0",
+  "versionDes":"新版说明",
+  "androidMinVersion":1,
+  "iosMinVersion":1
+}

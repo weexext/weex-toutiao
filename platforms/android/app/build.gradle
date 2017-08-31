@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.tt.client"
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionCode 1
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "x86"
+            abiFilters "armeabi"
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("tools/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+        debug {
+            storeFile file("tools/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled true
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets {
+        main {
+            java {
+                srcDirs = ["src/main/java", "src/main/java_zxing"];
+                jniLibs.srcDirs = ['libs']
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+    testOptions {
+        reportDir = "$project.buildDir/test/report"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+repositories{
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+
+        //weex 依赖 Android SDK version > 23
+        compile "com.facebook.fresco:fresco:0.10.0"
+        compile "com.android.support:appcompat-v7:23.1.1"
+        compile "com.android.support:recyclerview-v7:23.1.1"
+        compile "com.android.support:support-v4:23.1.1"
+        compile "com.alibaba:fastjson:1.1.46.android"
+        //weex chrome 调试相关 debug引入
+        debugCompile 'com.google.code.findbugs:jsr305:2.0.1'
+        debugCompile 'com.squareup.okhttp:okhttp:2.3.0'
+        debugCompile 'com.squareup.okhttp:okhttp-ws:2.3.0'
+        debugCompile 'com.taobao.android:weex_inspector:0.10.0.5'
+        debugCompile 'com.journeyapps:zxing-android-embedded:3.4.0'
+
+        compile 'com.ucar:weexext_sdk:1.1.1@aar'
+        compile 'com.ucar:weex_sdk:1.6@aar'
+        compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    }
+    flatDir{
+        dirs 'libs'
+    }
+}
+
