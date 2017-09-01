@@ -27,9 +27,9 @@ Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/a
 
 ![entry](https://github.com/weexext/weex-toutiao/blob/master/capture/v_02.gif?raw=true)
 
-![collect](https://github.com/weexext/weex-toutiao/blob/master/capture/home.png)
+!ss[collect](https://github.com/weexext/weex-toutiao/blob/master/capture/home.png)
 
-![detail](https://github.com/weexext/weex-toutiao/blob/master/capture/detail.png)
+!ss[detail](https://github.com/weexext/weex-toutiao/blob/master/capture/detail.png)
 
 
 ## 目录
