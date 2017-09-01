@@ -201,8 +201,8 @@
     },
     events:{
       naviBarLeftItemClick(e){
-          //navigator.pop(()=>{})
-          console.log('pop')
+//          navigator.pop(()=>{})
+//          console.log('pop')
       }
     }
   }

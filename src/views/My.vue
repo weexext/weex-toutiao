@@ -1,191 +1,135 @@
 <template>
-    <div>
-            <list class="list">
-                <refresh class="refresh-view" :display="refresh_display" @refresh="onrefresh"
-                         @pullingdown="pullingdown">
-                    <loading-indicator class="loading-indicator"></loading-indicator>
-                </refresh>
-                <cell v-for="sec in sections" @click="onItemClick(item)">
-                    <div class="header">
-                        <text class="header-title">{{sec.title}}</text>
-                    </div>
-                    <div v-for="item in sec.items" class="item" :key="item.index">
-                        <text class="item-title">row {{item.id}}</text>
-                    </div>
-                </cell>
+    <div @onAndroidBack="onAndroidBack" @ready="ready" @actived="actived" @deactived="deactived" class="container">
+        <!--<navpage backgroundColor="#3e50b5" title="Text"-->
+        <!--@naviBarLeftItemClick="naviBarLeftItemClick"/>-->
 
-                <loading class="loading-view" :display="loading_display" @loading="onloading">
-                    <loading-indicator style="height: 60px; width: 60px;"></loading-indicator>
-                </loading>
-            </list>
-            <!--<div v-for="(sec, i) in sections" :key="i" class="section">-->
-                <!--<div class="header">-->
-                    <!--<text class="header-title">{{sec.title}}</text>-->
-                <!--</div>-->
-                <!--<div v-for="item in sec.items" class="item" :key="item.index">-->
-                    <!--<text class="item-title">row {{item.id}}</text>-->
-                <!--</div>-->
-            <!--</div>-->
+        <scroller style='align-items:center'>
+            <div style='margin-top:20px'>
+                <text style="color:red;font-size:50px">only support font for ttf and woff</text>
+            </div>
+            <text class="title2" style='margin-top:50px;width:500px'>http ttf: &#xe606;&#xe605;&#xe604;&#xe603;&#xe602;&#xe601;&#xe600;</text>
+            <text class="title3" style='margin-top:50px;width:500px'>http woff: &#xe606;&#xe605;&#xe604;&#xe603;&#xe602;&#xe601;&#xe600;</text>
+
+            <div style='flex-direction:row;margin-top:50px'>
+                <text style='font-family:iconfont4;font-size:50;color:green'>&#xe614;&#xe612;&#xe613;</text>
+                <text style='font-family:iconfont4;font-size:50;'>&#xe614;&#xe612;&#xe613;&#xe61d;&#xe714;</text>
+                <text style='font-family:iconfont4;font-size:60;color:blue'>&#xe711;</text>
+                <text style='font-family:iconfont4;font-size:60;color:green'>&#xe71c;&#xe60b;</text>
+            </div>
+            <div style='flex-direction:row;margin-top:50px'>
+                <text style='font-family:iconfont4;font-size:50;color:green'>&#xe71b;</text>
+                <text style='font-family:iconfont4;font-size:50;'>&#xe713;</text>
+                <text style='font-family:iconfont4;font-size:60;color:blue'>&#xe714;</text>
+                <text style='font-family:iconfont4;font-size:60;color:green'>&#xe71f;&#xe602;&#xe715;&#xe60a;&#xe606;&#xe717;&#xe657;&#xe654;&#xe64f;&#xe637;</text>
+            </div>
+            <div>
+                <text style='font-family:iconfont4;font-size:100; margin-top:50px'>&#xe631;&#xe630;&#xe627;&#xe63e;&#xe649;&#xe641;&#xe643;</text>
+            </div>
+
+            <div>
+                <text style='font-family:iconfont4;font-size:100;color:green;margin-top:50px'>&#xe61e;&#xe600;&#xe62b;&#xe646;</text>
+                <text style='font-family:iconfont4;font-size:100;margin-top:50px'></text>
+            </div>
+
+            <div style='flex-direction:row'>
+                <text style='font-family:iconfont4;font-size:70;width:750px'>&#xe748;&#xe747;&#xe746;&#xe746;&#xe745;&#xe744;&#xe742;&#xe740;&#xe73f;&#xe73a;&#xe731;&#xe6e0;&#xe72c;&#xe730;&#xe740;&#xe6e1;&#xe6d7;&#xe739;&#xe73d;&#xe735;&#xe72a;&#xe6e3;&#xe738;</text>
+            </div>
+
+        </scroller>
     </div>
 </template>
-
 <style scoped>
     .container {
         flex: 1;
     }
+    .img-wraper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-item {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .img {
+        width: 300px;
+        height: 250px;
+    }
 
-    .body {
-        flex: 1;
+</style>
+<style>
+    .container {
         background-color: #f3f3f3;
-    }
-    .refresh-view {
-        height: 120px;
-        width: 750px;
-        display: -webkit-flex;
-        display: flex;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        align-items: center;
-    }
-
-    .loading-view {
-        height: 80px;
-        width: 750px;
+        flex-direction: column;
+        flex: 1;
         justify-content: center;
         align-items: center;
-        background-color: #c0c0c0;
+    }
+    .title1 {
+        color: red;
+        font-size: 36;
+        font-family: iconfont1;
     }
 
-    .header {
-        background-color: #45b5f0;
-        padding: 20px;
-        height: 88px;
-        justify-content: center;
+    .title2 {
+        color: gray;
+        font-size: 36;
+        font-family: iconfont2;
     }
 
-    .header-title {
-        color: white;
-        font-weight: bold;
+    .title3 {
+        color: pink;
+        font-size: 36;
+        font-family: iconfont3;
     }
 
-    .item {
-        justify-content: center;
-        border-bottom-width: 2px;
-        border-bottom-color: #c0c0c0;
-        height: 100px;
-        padding: 20px;
-    }
-
-    .item-title {
+    .title4 {
+        color: red;
+        font-size: 36;
+        font-family: iconfont4;
     }
 </style>
 
 <script>
-    module.exports = {
-        methods: {
-            onrefresh: function (e) {
-                var self = this;
-                self.refresh_display = 'show';
-                setTimeout(function () {
-                    self.refresh_display = 'hide';
-                }, 3000)
-            },
-            onloading: function (e) {
-                var self = this;
-                self.loading_display = 'show';
-                setTimeout(function () {
-                    self.loading_display = 'hide';
-                }, 3000)
-            },
-            pullingdown: function (e) {
-                var dy = e.dy;
-                var pullingDistance = e.pullingDistance;
-                var viewHeight = e.viewHeight;
-            }
+    //    import config from '../../config/index'
+
+    export default {
+        components: {
+//            navpage: require('../../include/navpage.vue'),
         },
-        data: function () {
-            return {
-                refresh_display: 'hide',
-                loading_display: 'hide',
-                sections: [
-                    {
-                        title: 'Header 1',
-                        items: [
-                            {id: 1},
-                            {id: 2},
-                            {id: 3},
-                            {id: 4},
-                            {id: 5}
-                        ]
-                    },
-                    {
-                        title: 'Header 2',
-                        items: [
-                            {id: 6},
-                            {id: 7},
-                            {id: 8},
-                            {id: 9},
-                            {id: 10},
-                            {id: 11}
-                        ]
-                    },
-                    {
-                        title: 'Header 3',
-                        items: [
-                            {id: 6},
-                            {id: 7},
-                            {id: 8},
-                            {id: 9},
-                            {id: 10},
-                            {id: 11}
-                        ]
-                    }
-                ],
-                moreSections: [
-                    {
-                        title: 'Header 3',
-                        items: [
-                            {id: 12},
-                            {id: 13},
-                            {id: 14},
-                            {id: 15},
-                            {id: 16},
-                            {id: 17},
-                            {id: 18}
-                        ]
-                    },
-                    {
-                        title: 'Header 4',
-                        items: [
-                            {id: 19},
-                            {id: 20},
-                            {id: 21},
-                            {id: 22}
-                        ]
-                    },
-                    {
-                        title: 'Header 5',
-                        items: [
-                            {id: 23},
-                            {id: 24},
-                            {id: 25},
-                            {id: 26},
-                            {id: 27}
-                        ]
-                    },
-                    {
-                        title: 'Header 6',
-                        items: [
-                            {id: 28},
-                            {id: 29},
-                            {id: 30},
-                            {id: 31},
-                            {id: 32}
-                        ]
-                    }
-                ]
-            }
+        mounted: function () {
+
+            var domModule = weex.requireModule('dom');
+            //目前支持ttf、woff文件，不支持svg、eot类型,moreItem at http://www.iconfont.cn/
+
+//            domModule.addRule('fontFace', {
+//                'fontFamily': "iconfont2",
+//                'src': "url('http://at.alicdn.com/t/font_1469606063_76593.ttf')"
+//            });
+//            domModule.addRule('fontFace', {
+//                'fontFamily': "iconfont3",
+//                'src': "url('http://at.alicdn.com/t/font_1469606522_9417143.woff')"
+//            });
+////
+//            domModule.addRule('fontFace', {
+//                'fontFamily': "iconfont4",
+//                'src': "url('http://at.alicdn.com/t/font_zn5b3jswpofuhaor.ttf')"
+//            });
+
+
+            // you can use the absolute path or the local:// scheme path
+//            var domModule = weex.requireModule('dom');
+            domModule.addRule('fontFace', {
+                'fontFamily': "iconfont4",
+                'src': "url('http://10.99.44.56:12570/src/assets/font/font_zn5b3jswpofuhaor.ttf')"
+            });
+
+//              domModule.addRule('fontFace', {
+//               'fontFamily': "iconfont4",
+//               'src': "url('file:///storage/emulated/0/Android/data/com.alibaba.weex/cache/http:__at.alicdn.com_t_font_1469606063_76593.ttf')"
+//             });
+
         }
     }
 </script>
