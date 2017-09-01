@@ -25,11 +25,11 @@ Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/a
 
 ## 效果
 
-![entry](https://github.com/weexext/weex-toutiao/blob/master/capture/v_2.gif?raw=true)
+![entry](https://github.com/weexext/weex-toutiao/blob/master/capture/v_2.gif?row=true)
 
-![collect](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutioa_home.png)
+![collect](https://github.com/weexext/weex-toutiao/blob/master/capture/toutioa_home.png)
 
-![detail](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_detail.png)
+![detail](https://github.com/weexext/weex-toutiao/blob/master/capture/toutiao_detail.png)
 
 
 ## 目录
@@ -70,6 +70,8 @@ Ps：多star多动力[捂脸]
 
 ## 参考
 
+[u-weex开源地址](https://github.com/weexext)
+[u-weex开源地址wiki](https://github.com/weexext/weex-ext-wiki/wiki)
 [toutiao_Vue2.0的项目](https://github.com/Huahua-Chen/toutiao_Vue2.0)
 
 
