@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C0609A91F3D9AFF001282A1 /* UCWeexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0609A81F3D9AFF001282A1 /* UCWeexManager.m */; };
-		2C45A0551F55147500931349 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2C45A0541F55147500931349 /* assets */; };
 		2C8A19951F3D562600F23ABE /* UCTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A19941F3D562600F23ABE /* UCTabBarManager.m */; };
 		2C8A19991F3D573A00F23ABE /* UCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A19981F3D573A00F23ABE /* UCBaseViewController.m */; };
 		2C8A199C1F3D575700F23ABE /* UCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A199B1F3D575700F23ABE /* UCHomeViewController.m */; };
@@ -32,6 +31,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		656D73FDABA47A45C7180723 /* libPods-UCarWeex_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD244F1CF62831E1D9803DF /* libPods-UCarWeex_Example.a */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		D7EBD3EF1F59602C0060238A /* assets in Resources */ = {isa = PBXBuildFile; fileRef = D7EBD3EE1F59602B0060238A /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 		2C0609A71F3D9AFF001282A1 /* UCWeexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCWeexManager.h; sourceTree = "<group>"; };
 		2C0609A81F3D9AFF001282A1 /* UCWeexManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCWeexManager.m; sourceTree = "<group>"; };
 		2C0609AB1F3D9C58001282A1 /* UCCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCommonMacro.h; sourceTree = "<group>"; };
-		2C45A0541F55147500931349 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2C4A6AA81F42F56F0047ADC3 /* UCEnvConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCEnvConfigMacro.h; sourceTree = "<group>"; };
 		2C8A19931F3D562600F23ABE /* UCTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCTabBarManager.h; sourceTree = "<group>"; };
 		2C8A19941F3D562600F23ABE /* UCTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCTabBarManager.m; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		884C4DBD2A3205C973FACD69 /* Pods-UCarWeex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCarWeex_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCarWeex_Tests/Pods-UCarWeex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC251BD8A9B76E41A2F30FC1 /* libPods-UCarWeex_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UCarWeex_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41861966A44367B33420176 /* Pods-UCarWeex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCarWeex_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCarWeex_Tests/Pods-UCarWeex_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D7EBD3EE1F59602B0060238A /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +225,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				2C45A0541F55147500931349 /* assets */,
+				D7EBD3EE1F59602B0060238A /* assets */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for UCarWeex */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -410,7 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C45A0551F55147500931349 /* assets in Resources */,
+				D7EBD3EF1F59602C0060238A /* assets in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				2CF4931A1F3C59C000084466 /* UCarWeex.podspec in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -501,7 +501,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		90E90B88D904D90706405D00 /* [CP] Check Pods Manifest.lock */ = {
@@ -516,7 +516,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -4,19 +4,17 @@
 
 源码地址：[toutiao_weex](https://github.com/weexext/weex-toutiao)
 
-Apk地址：[toutiao_Vue2.0](https://huahua-chen.github.io/demos/toutiao)
+Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/app-debug.apk?raw=true)
 
 ## 前言
 
-先占个坑位。  
+
 
 之前打算做个东西熟悉vue的使用，由于自己蛮喜欢刷手机看看新闻的，借鉴了其他同学的项目（链接在下面），自己也做了一个。项目中还有许多可以完善的地方，不足之处希望小伙伴们可以issue，我会在这里更新。目前还没有全面地测试该项目，有问题提问，大家一起学习。
 
 ## 技术栈
 
-1. 主要用到：vue、vuex、vue-router
-2. 移动端布局：flexble.js
-3. 其他: jsonp、axios、iView、vue-lazyload、moment
+1. 主要用到：vue、weex android ios
 
 ## 功能
 
@@ -26,15 +24,13 @@ Apk地址：[toutiao_Vue2.0](https://huahua-chen.github.io/demos/toutiao)
 - 待...
 
 ## 效果
-![移动端](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_code.png?raw=true)
 
-移动端可以直接扫描，或者在chrome的device toolbard打开[传送门](https://huahua-chen.github.io/demos/toutiao)
+![entry](https://github.com/weexext/weex-toutiao/blob/master/capture/v_01.gif?raw=true)
 
-![entry](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_entry.gif?raw=true)
+![collect](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutioa_home.png?raw=true)
 
-![collect](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_collect.gif?raw=true)
+![detail](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_detail.png?raw=true)
 
-![search](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_search.gif?raw=true)
 
 ## 目录
 ```
