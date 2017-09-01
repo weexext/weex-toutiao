@@ -20,12 +20,12 @@ public class MainActivity extends FragmentActivity {
             public void run() {
               startWeexPage();
             }
-        },1000);
+        },10);
 
     }
 
     private void startWeexPage() {
-        UWXPageManager.openPage(this, "index.js", new UWXBundleInfo.NavBar("#ffffff", "#ffffff"));
+        UWXPageManager.openPage(this, "index.js", new UWXBundleInfo.NavBar("#ffffff", "#d43d3d"));
 //        Bundle bundle = new Bundle();
 //        bundle.putString("key", "value");
 //        bundle.putString("name", "zhangsan");

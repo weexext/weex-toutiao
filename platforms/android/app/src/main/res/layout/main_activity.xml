@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/container"
-    android:background="#cc385198">
+    android:background="#d43d3d">
 
     <!--<FrameLayout-->
         <!--android:id="@+id/container"-->
