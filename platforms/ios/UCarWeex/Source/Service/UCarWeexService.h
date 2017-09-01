@@ -3,18 +3,23 @@
 //  Pods
 //
 //  Created by huyujin on 2017/8/11.
-//
+//  Copyright © 2017年 ucarinc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-//#import <UCarWeex/UCarWeex.h>
 #import <WeexSDK/WXLog.h>
+#import "UCXHotUpdate.h"
 
 @interface UCarWeexService : NSObject
 
+#pragma mark -
+/** 初始化
+ *
+ */
 + (void)initUCarWeexService;
 
-#pragma mark - 
+
+#pragma mark - 注册模块相关
 /**
  *  @abstract Register a module for a given name
  *
@@ -45,26 +50,8 @@
  */
 + (void)registerHandler:(id)handler withProtocol:(Protocol *)protocol;
 
-#pragma mark -
-/**
- * @abstract Group or organization of your app, default value is nil.
- */
-+ (NSString *)appGroup;
-+ (void)setAppGroup:(NSString *) appGroup;
 
-/**
- * @abstract Name of your app, default is value for CFBundleDisplayName in main bundle.
- */
-+ (NSString *)appName;
-+ (void)setAppName:(NSString *)appName;
-
-/**
- * @abstract Version of your app, default is value for CFBundleShortVersionString in main bundle.
- */
-+ (NSString *)appVersion;
-+ (void)setAppVersion:(NSString *)appVersion;
-
-#pragma mark -
+#pragma mark - 日志相关
 /**
  *  log level
  */

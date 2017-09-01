@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2C0609A91F3D9AFF001282A1 /* UCWeexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0609A81F3D9AFF001282A1 /* UCWeexManager.m */; };
-		2C4A6AA21F4298170047ADC3 /* bundlejs in Resources */ = {isa = PBXBuildFile; fileRef = 2C4A6AA11F4298170047ADC3 /* bundlejs */; };
+		2C45A0551F55147500931349 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2C45A0541F55147500931349 /* assets */; };
 		2C8A19951F3D562600F23ABE /* UCTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A19941F3D562600F23ABE /* UCTabBarManager.m */; };
 		2C8A19991F3D573A00F23ABE /* UCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A19981F3D573A00F23ABE /* UCBaseViewController.m */; };
 		2C8A199C1F3D575700F23ABE /* UCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A199B1F3D575700F23ABE /* UCHomeViewController.m */; };
 		2C8A199F1F3D576800F23ABE /* UCMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A199E1F3D576800F23ABE /* UCMineViewController.m */; };
 		2C8A19A21F3D584200F23ABE /* UCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A19A11F3D584200F23ABE /* UCBaseNavigationController.m */; };
-		2C914AC01F4450E300ACCD83 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2C914ABF1F4450E300ACCD83 /* assets */; };
 		2CE12F561F3D93DC00417AA3 /* UCImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE12F521F3D93DC00417AA3 /* UCImgLoaderDefaultImpl.m */; };
 		2CE12F571F3D93DC00417AA3 /* UCImgLocalLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE12F531F3D93DC00417AA3 /* UCImgLocalLoader.m */; };
 		2CF4931A1F3C59C000084466 /* UCarWeex.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2CF493191F3C59C000084466 /* UCarWeex.podspec */; };
@@ -50,7 +49,7 @@
 		2C0609A71F3D9AFF001282A1 /* UCWeexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCWeexManager.h; sourceTree = "<group>"; };
 		2C0609A81F3D9AFF001282A1 /* UCWeexManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCWeexManager.m; sourceTree = "<group>"; };
 		2C0609AB1F3D9C58001282A1 /* UCCommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCommonMacro.h; sourceTree = "<group>"; };
-		2C4A6AA11F4298170047ADC3 /* bundlejs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundlejs; sourceTree = "<group>"; };
+		2C45A0541F55147500931349 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2C4A6AA81F42F56F0047ADC3 /* UCEnvConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCEnvConfigMacro.h; sourceTree = "<group>"; };
 		2C8A19931F3D562600F23ABE /* UCTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCTabBarManager.h; sourceTree = "<group>"; };
 		2C8A19941F3D562600F23ABE /* UCTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCTabBarManager.m; sourceTree = "<group>"; };
@@ -62,7 +61,6 @@
 		2C8A199E1F3D576800F23ABE /* UCMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMineViewController.m; sourceTree = "<group>"; };
 		2C8A19A01F3D584200F23ABE /* UCBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCBaseNavigationController.h; sourceTree = "<group>"; };
 		2C8A19A11F3D584200F23ABE /* UCBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCBaseNavigationController.m; sourceTree = "<group>"; };
-		2C914ABF1F4450E300ACCD83 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2CE12F521F3D93DC00417AA3 /* UCImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		2CE12F531F3D93DC00417AA3 /* UCImgLocalLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCImgLocalLoader.m; sourceTree = "<group>"; };
 		2CE12F541F3D93DC00417AA3 /* UCImgLocalLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCImgLocalLoader.h; sourceTree = "<group>"; };
@@ -227,8 +225,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				2C914ABF1F4450E300ACCD83 /* assets */,
-				2C4A6AA11F4298170047ADC3 /* bundlejs */,
+				2C45A0541F55147500931349 /* assets */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for UCarWeex */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -413,11 +410,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C45A0551F55147500931349 /* assets in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				2CF4931A1F3C59C000084466 /* UCarWeex.podspec in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				2C914AC01F4450E300ACCD83 /* assets in Resources */,
-				2C4A6AA21F4298170047ADC3 /* bundlejs in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "UCImgLocalLoader.h"
+#import <UCarWeex/UCarWeex.h>
 
 @implementation UCImgLocalLoader
 
@@ -20,9 +21,10 @@
     UIImage *img = nil;
     NSString *URLPrefix = @"file:///";
     NSString *UCURLPrefix = @"assets:///image/";
-    if ([imgURL hasPrefix:UCURLPrefix]) {
+    if ([imgURL hasPrefix:UCURLPrefix] ) {
         NSString *imgName = [imgURL substringFromIndex:UCURLPrefix.length];
-        img = [[self class] uc_imageFromName:imgName];
+        NSString *imgPath = [NSString stringWithFormat:@"%@/%@",[UCXAppConfiguration imagePath],imgName];
+        img = [UIImage imageWithContentsOfFile:imgPath];
     } else { //其他非固定路径存放的图片
         NSString *imgName = [imgURL substringFromIndex:URLPrefix.length];
         img = [UIImage imageWithContentsOfFile:imgName];

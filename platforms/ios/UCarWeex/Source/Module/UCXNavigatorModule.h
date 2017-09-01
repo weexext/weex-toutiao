@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "WeexSDK.h"
-//#import <WeexSDK/WXModuleProtocol>
 #import <WeexSDK/WeexSDK.h>
 
 @interface UCXNavigatorModule : NSObject<WXModuleProtocol>

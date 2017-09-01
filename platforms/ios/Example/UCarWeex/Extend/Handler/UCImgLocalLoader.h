@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <UCarWeex/WXImgLoaderProtocol.h>
 #import <WeexSDK/WXImgLoaderProtocol.h>
 
 @interface UCImgLocalLoader : NSObject<WXImageOperationProtocol>

@@ -10,6 +10,7 @@
 #import <WeexSDK/WeexSDK.h>
 #import "UCXNavigatorModule.h"
 #import "UCXGlobalEventModule.h"
+#import "UCXHotUpdate.h"
 
 @interface UCarWeexService ()
 
@@ -40,15 +41,15 @@
     //init sdk enviroment
     [WXSDKEngine initSDKEnvironment];
     //register custom module and component
-    //...
     [WXSDKEngine registerModule:@"UNavigator" withClass:[UCXNavigatorModule class]];
     [WXSDKEngine registerModule:@"UGlobalEvent" withClass:[UCXGlobalEventModule class]];
-    
     //register the implementation of protocol
     
     //set the log level
     [WXLog setLogLevel:[UCarWeexService shared].logLevel];
+    
 }
+
 
 #pragma mark - 
 + (void)registerModule:(NSString *)name withClass:(Class)clazz {
@@ -63,27 +64,6 @@
     [WXSDKEngine registerHandler:handler withProtocol:protocol];
 }
 
-#pragma mark - business configuration
-+ (NSString *)appGroup {
-    return [WXAppConfiguration appGroup];
-}
-+ (void)setAppGroup:(NSString *)appGroup {
-    [WXAppConfiguration setAppGroup:appGroup];
-}
-
-+ (NSString *)appName {
-    return [WXAppConfiguration appName];
-}
-+ (void)setAppName:(NSString *)appName {
-    [WXAppConfiguration setAppName:appName];
-}
-
-+ (NSString *)appVersion {
-    return [WXAppConfiguration appVersion];
-}
-+ (void)setAppVersion:(NSString *)appVersion {
-    [WXAppConfiguration setAppVersion:appVersion];
-}
 
 #pragma mark - log
 + (void)setLogLevel:(WXLogLevel)level {

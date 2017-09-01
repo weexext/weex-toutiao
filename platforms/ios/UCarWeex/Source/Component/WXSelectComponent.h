@@ -19,7 +19,6 @@
 
 #import <UIKit/UIKit.h>
 #import <WeexSDK/WXComponent.h>
-//#import "WXComponent.h"
 
 @interface WXSelectComponent : WXComponent <UIPickerViewDataSource, UIPickerViewDelegate>
 

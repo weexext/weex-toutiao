@@ -53,7 +53,7 @@ WX_EXPORT_METHOD(@selector(home:callback:))
     // push
     UIViewController *container = self.weexInstance.viewController;
     UCXBaseViewController *vc = [[UCXBaseViewController alloc] initWithSourceURL:[NSURL URLWithString:url]];
-    vc.dict = navBarDict;
+    vc.options = options;
     vc.hidesBottomBarWhenPushed = YES;
     [container.navigationController pushViewController:vc animated:animated];
     callback(MSG_SUCCESS);
@@ -90,7 +90,11 @@ WX_EXPORT_METHOD(@selector(home:callback:))
         callback(MSG_FAILED);
         return;
     }
-    UIViewController *vc = arr[arr.count-(indexValue+1)];
+    UCXBaseViewController *vc = arr[arr.count-(indexValue+1)];
+    if (param && [param count]>0) { // 回调函数
+        NSDictionary *tmp = @{@"tagCode":tagCode,@"param":param};
+        vc.callback(tmp);
+    }
     [nav popToViewController:vc animated:animated];
     
     callback(MSG_SUCCESS);

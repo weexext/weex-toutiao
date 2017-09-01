@@ -18,10 +18,6 @@
  */
 
 #import "WXSelectComponent.h"
-//#import "WXUtility.h"
-//#import "WXComponent+Events.h"
-//#import <WeexSDK/WXUtility.h>
-//#import <WeexSDK/WXComponent+Events.h>
 #import <WeexSDK/WeexSDK.h>
 
 @interface WXSelectComponent()
