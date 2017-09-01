@@ -27,9 +27,9 @@ Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/a
 
 ![entry](https://github.com/weexext/weex-toutiao/blob/master/capture/v_01.gif?raw=true)
 
-![collect](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutioa_home.png?raw=true)
+![collect](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutioa_home.png)
 
-![detail](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_detail.png?raw=true)
+![detail](https://github.com/Huahua-Chen/images/blob/master/images_inBlog/toutiao_detail.png)
 
 
 ## 目录
@@ -37,37 +37,21 @@ Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/a
 |- src
    |- assets
       |- image                   // 项目图片
-      |- style
-         |- common.scss          // 移动端的单位的转换
-         |- global.scss          // 全局样式
-         |- newsList.scss        // 新闻列表的样式
-         |- transition.scss      // 过渡样式
-   |- components                 // 组件
-      |- Back.vue                // 返回
-      |- Comment.vue             // 评论
-      |- Footer.vue              // 页脚
-      |- HomeNav.vue             // 新闻类型导航
-      |- Loading.vue             // 加载
-      |- Loadingmore.vue         // 加载更多
-      |- Nav.vue                 // 导航
-      |- Newslist.vue            // 新闻列表
-      |- Top.vue                 // 返回顶部
-      |- Warning.vue             // 出错提醒
-   |- pages                      // 主体页面
-      |- About.vue               // 信息页
-      |- Collect.vue             // 收藏页
-      |- Content.vue             // 文章页
+      |- font                    // iconfont字体库
+   |- include                    // 组件
+      |- navbar.vue              // 导航
+      |- tabbar.vue              // 底部导航
+   |- views                      // 主体页面
+      |- index.vue               // 主体页面
+      |- Detail.vue              // 详情页
+      |- Care.vue                // 关注页
       |- Home.vue                // 主页
-      |- Search.vue              // 收藏页
-      |- Session.vue             // 段子页
-   |- router                     // 路由
-   |- store                      // 状态管理
-   |- App.vue
-   |- main.js                    // 入口文件
-|- static
-   |- collect.json               // 初始收藏
-   |- imgerror.jpg               // 懒加载错误图片
-   |- imgloading.jpg             // 懒加载中图片
+      |- My.vue                  // 段子页
+   |- manifast.json              // 清单文件
+|- tools
+   |- android                    // android copy
+   |- iso                        // ios copy
+   |- packzip.js                 // 打包
 ```
 更多细节在源码中会有一些注释
 ## API
@@ -81,34 +65,29 @@ Apk地址：[android-demo](https://github.com/weexext/weex-toutiao/blob/master/a
 
 还可以参考[今日头条Api分析](https://github.com/iMeiji/Toutiao/wiki/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1Api%E5%88%86%E6%9E%90)
 
-## 最后
 
-本项目作为自己的学习记录，还有许多需要改进的地方，也希望可以帮到有需要的小伙伴，一起进步。
-
-Ps：我不介意有好多好多star[捂脸]
+Ps：多star多动力[捂脸]
 
 ## 参考
 
-[hcy1996的项目](https://github.com/hcy1996/vue-toutiao)
+[toutiao_Vue2.0的项目](https://github.com/Huahua-Chen/toutiao_Vue2.0)
 
-[vue-lazyload实现图片懒加载](https://github.com/hilongjw/vue-lazyload)
-
-[jsonp跨域获取数据](https://github.com/webmodules/jsonp)
-
-[flexible.js淘宝的移动端处理](https://github.com/amfe/article/issues/17)
 
 ## Build Setup
 
+#### android
 ``` bash
-# install dependencies
+
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+npm run packzip
+
+npm run copy:android
+
+cd platforms/android
+
+gradle iD
+
 ```
